@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="stylesheet" href="style.css">
+<script src="index.js" defer></script>
+  <title>Frontend Mentor | Expenses chart component</title>
+
+</head>
+
+<body>
+  <main>
+    <div class="chart-header">
+      <div class="main-balance">
+        <span>My balance</span>
+        <h2 id="balance-now">₹1021.48</h2>
+      </div>
+      <div class="theme" id="bgToggle" type="button">
+        <div class="circles" style="border:2px solid white ; margin-right: -25px; z-index: 1;"></div><div class="circles" style="background-color: hsl(25, 47%, 15%);"></div>
+      </div>
+    </div>
+
+    <div class="chart-body" id="main">
+      <h2>Spending - Last 7 days</h2>
+      <div class="expense-bar">
+        <div class="bars">
+          <span class="day">mon</span>
+          <div class="bar"></div>
+          <span class="per-day-expense">₹123</span>
+        </div>
+        <div class="bars">
+          <span class="day">tue</span>
+          <div class="bar"></div>
+          <span class="per-day-expense">₹65</span>
+        </div>
+        <div class="bars">
+          <span class="day">wed</span>
+          <div class="bar"></div>
+          <span class="per-day-expense">₹89</span>
+        </div>
+        <div class="bars">
+          <span class="day">thu</span>
+          <div class="bar"></div>
+          <span class="per-day-expense">₹93</span>
+        </div>
+        <div class="bars">
+          <span class="day">fri</span>
+          <div class="bar"></div>
+          <span class="per-day-expense">₹103</span>
+        </div>
+        <div class="bars">
+          <span class="day">sat</span>
+          <div class="bar"></div>
+          <span class="per-day-expense">₹43</span>
+        </div>
+        <div class="bars">
+          <span class="day">sun</span>
+          <div class="bar"></div>
+          <span class="per-day-expense">₹63</span>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="chart-footer">
+        <div class="month-total">
+          <span>Total this month</span>
+          <h1 id="monthly-incom">₹5034.75</h1>
+        </div>
+        <div class="growth">
+          <h4 id="growth-rate">+2.4%</h4>
+          <span>from last month</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+</body>
+
+</html>
