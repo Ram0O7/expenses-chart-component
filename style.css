@@ -159,9 +159,24 @@ opacity: 1;
   }
   main{
     font-size: 14px;
-    margin: 40px;
+    width: 400px;
+    /* margin: 40px; */
   }
   .expense-bar{
     cursor: unset;
+  }
+}
+
+@media (max-width:400px) {
+  main{
+    width: 350px;
+    margin: 0;
+  }
+  .chart-body,.chart-header{
+    padding: 20px;
+  }
+  .bar{
+    width: 25px;
+    
   }
 }
