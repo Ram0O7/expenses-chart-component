@@ -151,10 +151,34 @@ opacity: 1;
 }
 
 @media (max-width:480px) {
-  main{
-    padding: 10px;
+  .chart-body,.chart-header{
+    padding: 35px;
   }
   .bar{
-    width: 35px;
+    width: 30px;
   }
+  main{
+    font-size: 14px;
+  }
+  h1,h2{
+    font-weight: 700;
+  }
+  .expense-bar{
+    cursor: unset;
+  }
+}
+
+@media (max-width:425px) {
+  /* main{
+    padding: 15px;
+  } */
+  .chart-header,.chart-body{
+    /* margin: auto; */
+    padding: 20px;
+  }
+  .bar{
+    width: 20px;
+    justify-content: space-between;
+  }
+
 }
